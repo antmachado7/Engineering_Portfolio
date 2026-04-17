@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | António Gomes</title>
+  <meta name="description" content="Detailed engineering projects by António Gomes, including composites, Formula Student, aeronautical structures, bonded joints, and thermal modelling.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="António Gomes home">
+        <span class="brand-mark">AG</span>
+        <span class="brand-text">
+          <strong>António Gomes</strong>
+          <span>Mechanical Engineer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="#project-index">Project index</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-secondary button-small" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Portfolio PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-compact">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Detailed portfolio</p>
+          <h1>Project experience in structures, composites, motorsport, and validation.</h1>
+          <p class="hero-intro">
+            A web-adapted version of the original engineering portfolio, reorganised into readable sections for recruiters and technical interviewers.
+          </p>
+        </div>
+        <div class="page-hero-actions reveal">
+          <a class="button" href="assets/docs/Antonio_Gomes_CV.pdf" download>Download CV</a>
+          <a class="button button-secondary" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Download Portfolio PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="project-index">
+      <div class="container anchor-grid reveal">
+        <a href="#masters-thesis">Master's Thesis</a>
+        <a href="#formula-wishbones">Formula Student Wishbones</a>
+        <a href="#formula-transmission">Formula Student Transmission</a>
+        <a href="#aero-structures">Aeronautical Structures</a>
+        <a href="#materials-joints">Materials &amp; Bonded Joints</a>
+        <a href="#nonlinear-mechanics">Non-Linear Mechanics</a>
+        <a href="#weg-internship">WEG Internship</a>
+      </div>
+    </section>
+
+    <section class="section project-section" id="masters-thesis">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">01 · Master's thesis · Politecnico di Milano</p>
+          <h2>Low-velocity impact modelling of Glass/PPS laminates</h2>
+          <p>
+            Graduate research focused on developing and validating an Abaqus/Explicit model for low-velocity impact in woven
+            Glass/PPS thermoplastic laminates, including correlation with experimental impact response and ultrasonic C-scan measurements.
+          </p>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>Scope</h3>
+            <ul class="list-clean">
+              <li>Intralaminar damage modelling with the Hashin 2D criterion</li>
+              <li>Cohesive interface elements for delamination</li>
+              <li>Bi-phasic shell-solid strategy for local indentation behaviour</li>
+              <li>Validation against drop-weight impact tests and C-scan data</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Key outputs</h3>
+            <ul class="list-clean">
+              <li>Delamination area predicted within about 15% of ultrasonic measurements</li>
+              <li>Acceleration-time response correlated with experimental impact data</li>
+              <li>Comparison of shell-only and bi-phasic strategies for back-face cracking and indentation</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-two">
+          <figure class="media-card reveal">
+            <img src="assets/images/CAE_U.png" alt="Impact simulation in a Glass/PPS laminate">
+            <figcaption>Impact simulation of the Glass/PPS laminate model in Abaqus/Explicit.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/g4_overlay_SG1_2_Estimation2.png" alt="Acceleration-time comparison between experiment and FE models">
+            <figcaption>Impact response correlation between experiment and finite element models.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/27_Del.png" alt="Ultrasonic C-scan and numerical delamination comparison">
+            <figcaption>Delamination footprint comparison between ultrasonic C-scan and numerical prediction.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt project-section" id="formula-wishbones">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">02 · Formula Student FEUP</p>
+          <h2>CFRP suspension wishbones with bonded 7075-T6 aluminium connectors</h2>
+          <p>
+            Wishbones and vibrations lead for a two-person sub-team, responsible for structural simulation, bonded-joint validation,
+            manufacturing support, and experimental testing for the Formula Student electric race car.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-tile reveal"><strong>25</strong><span>Suspension load cases analysed</span></div>
+          <div class="metric-tile reveal"><strong>80°C</strong><span>Bonded joint validation temperature</span></div>
+          <div class="metric-tile reveal"><strong>≈40</strong><span>Representative specimens tested</span></div>
+          <div class="metric-tile reveal"><strong>5</strong><span>Temperature levels from room temperature to 80°C</span></div>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>Engineering work</h3>
+            <ul class="list-clean">
+              <li>Abaqus/Standard analysis of aluminium connectors across suspension load cases</li>
+              <li>Cohesive zone modelling of the adhesive layer and joint failure behaviour</li>
+              <li>Correlation with tensile test data from representative tube-connector specimens</li>
+              <li>Support for prototype assembly, bonding troubleshooting, and implementation</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Outcome</h3>
+            <ul class="list-clean">
+              <li>Bi-adhesive joint concept continued through simulation and test correlation</li>
+              <li>Failure-load and failure-mode comparison across temperature conditions</li>
+              <li>Experimental validation of the bonded-joint concept for operating temperature conditions</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-three">
+          <figure class="media-card reveal">
+            <img src="assets/images/WB_Divider.png" alt="Formula Student suspension with wishbones">
+            <figcaption>Rear suspension layout with CFRP wishbones and hub assembly.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Connector_Optimization.png" alt="Finite element analysis of a wishbone connector">
+            <figcaption>FE analysis of the 7075-T6 aluminium connector under suspension loading.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Failure_vs_Temp.png" alt="Failure load versus temperature chart">
+            <figcaption>Comparison of failure load versus temperature for the joint solutions studied.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/JIG_Manufacturing_Setup.jpeg" alt="Manufacturing jig for wishbone assembly">
+            <figcaption>Manufacturing jig and assembled wishbone hardware.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Temp_Test_Setup.jpeg" alt="Tensile testing setup with environmental chamber">
+            <figcaption>Tensile testing setup used for elevated-temperature bonded-joint validation.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="formula-transmission">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">03 · Formula Student FEUP</p>
+          <h2>Drivetrain development, spline verification, and fatigue assessment</h2>
+          <p>
+            Transmission engineering work for FSFEUP-02 covering tripod housing optimisation, drivetrain integration, spline
+            reverse engineering, and safe-life halfshaft validation.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-tile reveal"><strong>−4 kg</strong><span>Drivetrain reduction vs previous prototype</span></div>
+          <div class="metric-tile reveal"><strong>−35%</strong><span>Tripod housing reduction from 1.407 kg to 0.920 kg</span></div>
+          <div class="metric-tile reveal"><strong>−51%</strong><span>Sprocket adaptor reduction from 0.251 kg to 0.123 kg</span></div>
+          <div class="metric-tile reveal"><strong>880 Nm</strong><span>Validated torsional loading case</span></div>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>Structural development</h3>
+            <ul class="list-clean">
+              <li>Static FEM of the tripod housing and sprocket adaptor in Abaqus</li>
+              <li>Three-stage tripod housing iteration from mixed-material concept to optimised steel solution</li>
+              <li>Safe-life fatigue assessment of halfshafts using LTS torque spectra and S-N methods</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Interface validation</h3>
+            <ul class="list-clean">
+              <li>Adoption of a street-car tripod joint solution to reduce cost by 800€</li>
+              <li>Involute projector-based spline reverse engineering and CAD reconstruction</li>
+              <li>Verification of DIN 5480 N 21 × 1 × 19 spline definition</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-three">
+          <figure class="media-card reveal">
+            <img src="assets/images/Transmission_CAD.png" alt="FSFEUP-02 drivetrain CAD assembly">
+            <figcaption>Drivetrain assembly including differential, tripod housing, halfshafts, and chain drive.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Involute_reconstruction_1.png" alt="Spline reconstruction step one">
+            <figcaption>Interface reconstruction workflow for tripod spline verification.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Involute_reconstruction_2.png" alt="Spline reconstruction step two">
+            <figcaption>CAD reconstruction supporting DIN 5480 verification.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Tripod_Housing_Optimization.png" alt="Tripod housing optimisation sequence">
+            <figcaption>Tripod housing evolution from initial concept to final lightweight design.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/LTS_Data.png" alt="Torque spectrum used for fatigue analysis">
+            <figcaption>Lap-time simulation torque spectrum used for halfshaft fatigue assessment.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt project-section" id="aero-structures">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">04 · FEUP MSc</p>
+          <h2>Aeronautical structures: wing-box static, fatigue, and damage tolerance analysis</h2>
+          <p>
+            Coursework and engineering study focused on aircraft wing-box verification, covering FEM-based static analysis,
+            fatigue assessment, composite failure criteria, and inspection-based damage tolerance logic.
+          </p>
+        </div>
+
+        <div class="detail-grid detail-grid-wide">
+          <article class="detail-card reveal">
+            <h3>Static structural analysis</h3>
+            <ul class="list-clean">
+              <li>Detailed Abaqus model with skins, spars, ribs, and stringers</li>
+              <li>Representative aerodynamic loading and structural response extraction</li>
+              <li>MATLAB and Excel post-processing for margins of safety</li>
+              <li>Verification for tension, global buckling, local buckling, and crippling</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Fatigue and damage tolerance</h3>
+            <ul class="list-clean">
+              <li>CFRP upper skin with ply-level checks using Maximum Stress, Maximum Strain, Tsai-Hill, and Tsai-Wu</li>
+              <li>Safe-life fatigue analysis for rib N3 and crack-growth assessment for the inspection hole</li>
+              <li>Inspection planning based on damage tolerance rather than immediate redesign</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-three">
+          <figure class="media-card reveal">
+            <img src="assets/images/Wireframe_FEM.png" alt="Aircraft wing-box structural model">
+            <figcaption>Finite element wing-box model including primary structural members.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Load_FEM.png" alt="Wing-box FEM with loads and boundary conditions">
+            <figcaption>Wing-box model with representative loads and boundary conditions.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Wingbox_FEM.png" alt="Wing-box displacement field">
+            <figcaption>Global displacement field under limit load conditions.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Tsai_Wu.png" alt="Tsai-Wu failure envelope">
+            <figcaption>Tsai-Wu failure envelope used for laminate assessment.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Load_Spectrum.png" alt="Stress spectrum for fatigue assessment">
+            <figcaption>Stress spectrum and block discretisation for fatigue life assessment.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="materials-joints">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">05 · FEUP MSc</p>
+          <h2>Aircraft structural materials, laminate mechanics, and adhesive bonding</h2>
+          <p>
+            Three related studies covering wing-rib material selection, composite laminate property prediction, uncertainty
+            analysis, and bonded aluminium-CFRP joint behaviour.
+          </p>
+        </div>
+
+        <div class="detail-grid detail-grid-wide">
+          <article class="detail-card reveal">
+            <h3>Materials and laminates</h3>
+            <ul class="list-clean">
+              <li>Material selection study for Airbus A380 wing-rib feet using GRANTA EduPack and literature review</li>
+              <li>Comparison of Al 7449, Al 7010, Al 2024, Al 2090, and Al 8090 trade-offs</li>
+              <li>MATLAB routines for micro-mechanics, CLPT, and laminate engineering constants</li>
+              <li>Monte Carlo studies on modulus variability and ply-angle deviation effects</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Bonded joints</h3>
+            <ul class="list-clean">
+              <li>Manufacture and testing of aluminium-CFRP single-lap joints with 25 mm overlap</li>
+              <li>Comparison of Araldite AV138 and AF 163-2K aerospace adhesive solutions</li>
+              <li>2D Abaqus cohesive modelling with CPE4R and COH2D4 elements</li>
+              <li>Prediction error around 4% for AV138 and 7.6% for AF 163-2K</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-three">
+          <figure class="media-card reveal">
+            <img src="assets/images/Materials_Comparison.png" alt="Material comparison chart for aluminium alloys">
+            <figcaption>Comparison of candidate aluminium alloys for wing-rib applications.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Monte_Carlo.png" alt="Monte Carlo distributions for laminate properties">
+            <figcaption>Monte Carlo distributions of laminate engineering constants.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/TP4_FEM.png" alt="FEM prediction for Araldite AV138 bonded joint">
+            <figcaption>Araldite AV138 cohesive failure prediction.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/TP4_Exp.png" alt="Experimental failure of Araldite AV138 bonded joint">
+            <figcaption>Experimental failure response for Araldite AV138.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/TP4_FEM_2.png" alt="FEM prediction for AF 163-2K bonded joint">
+            <figcaption>AF 163-2K bonded-joint failure prediction.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/TP4_Exp_2.png" alt="Experimental failure of AF 163-2K bonded joint">
+            <figcaption>Experimental adherend failure for AF 163-2K.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt project-section" id="nonlinear-mechanics">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">06 · FEUP MSc</p>
+          <h2>Non-linear buckling of a hollow Al 7075-T6 tube</h2>
+          <p>
+            A non-linear continuum mechanics project comparing eigenvalue buckling prediction and full non-linear response
+            with geometric imperfections and plasticity.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-tile reveal"><strong>0.67%</strong><span>Error vs Euler analytical solution</span></div>
+          <div class="metric-tile reveal"><strong>181 kN</strong><span>Linear perturbation critical load</span></div>
+          <div class="metric-tile reveal"><strong>159 kN</strong><span>Fully non-linear buckling load</span></div>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>Workflow</h3>
+            <ul class="list-clean">
+              <li>Eigenvalue extraction and Euler validation</li>
+              <li>Imperfection introduction from the first buckling mode</li>
+              <li>Static, Riks analysis with and without plasticity</li>
+            </ul>
+          </article>
+
+          <figure class="media-card reveal">
+            <img src="assets/images/MNMLC.png" alt="Plastic strain localisation during non-linear buckling">
+            <figcaption>Equivalent plastic strain localisation during fully non-linear buckling.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="weg-internship">
+      <div class="container">
+        <div class="project-section-header reveal">
+          <p class="eyebrow">07 · WEG Portugal internship</p>
+          <h2>Thermal modelling of heat dissipation in electric motor housings</h2>
+          <p>
+            Bachelor's thesis internship in product development, combining ANSYS steady-state thermal modelling with
+            experimental validation using PT100 sensors, airflow control, and thermography.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-tile reveal"><strong>34–40%</strong><span>Heat-dissipation loss for chamfered steel fins vs cast iron</span></div>
+          <div class="metric-tile reveal"><strong>48–52%</strong><span>Heat-dissipation loss for non-chamfered steel fins vs cast iron</span></div>
+          <div class="metric-tile reveal"><strong>7.7%</strong><span>Maximum deviation between corrected model and tests</span></div>
+        </div>
+
+        <div class="detail-grid">
+          <article class="detail-card reveal">
+            <h3>Approach</h3>
+            <ul class="list-clean">
+              <li>Steady-state thermal FEM models in ANSYS</li>
+              <li>Comparison of cast-iron and welded steel-fin housing concepts</li>
+              <li>Parametric study of chamfered versus non-chamfered fins</li>
+              <li>Python-based calculations and post-processing</li>
+            </ul>
+          </article>
+
+          <article class="detail-card reveal">
+            <h3>Insights</h3>
+            <ul class="list-clean">
+              <li>Chamfered fins improved thermal contact and outperformed non-chamfered alternatives</li>
+              <li>Radiation effects and thermal contact resistance were important to achieve correlation</li>
+              <li>Combined thermal simulation, testing, and industrial validation in one workflow</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="media-grid media-grid-two">
+          <figure class="media-card reveal">
+            <img src="assets/images/WEG.png" alt="Experimental thermal validation setup at WEG">
+            <figcaption>Experimental setup with PT100 sensors and forced airflow for validation.</figcaption>
+          </figure>
+          <figure class="media-card reveal">
+            <img src="assets/images/Termografica.png" alt="Thermographic image of a motor housing">
+            <figcaption>Thermographic measurement of housing temperature distribution during testing.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Direct contact and downloadable application materials.</h2>
+          <p>
+            The site is prepared for GitHub Pages hosting, with a detailed projects page and direct document downloads for recruiter use.
+          </p>
+        </div>
+
+        <div class="contact-card reveal">
+          <a class="contact-row" href="mailto:antmachado7@gmail.com">
+            <span>Email</span>
+            <strong>antmachado7@gmail.com</strong>
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/antmachado7/" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/antmachado7</strong>
+          </a>
+          <div class="contact-row">
+            <span>Location</span>
+            <strong>Porto, Portugal</strong>
+          </div>
+          <div class="contact-row">
+            <span>Phone</span>
+            <strong>+351 939 290 065</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>António Gomes</p>
+      <p>Mechanical Engineer · Structural Analysis &amp; Composite Materials</p>
+      <p>&copy; <span data-current-year></span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
