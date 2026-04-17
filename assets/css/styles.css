@@ -425,6 +425,8 @@ h3 {
 .metrics-grid,
 .detail-grid,
 .media-grid,
+.documents-layout,
+.document-list,
 .footer-inner,
 .anchor-grid {
   display: grid;
@@ -626,12 +628,62 @@ h3 {
   transform: translateY(0);
 }
 
+.documents-layout {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+}
+
+.document-feature,
+.document-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(183, 199, 217, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.document-feature {
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.document-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.document-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 9rem;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.document-card:hover,
+.document-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--brand);
+}
+
+.document-card strong {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1.02rem;
+}
+
+.document-card span {
+  color: var(--brand);
+  font-weight: 600;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .page-hero-grid,
   .contact-grid,
   .tools-grid,
   .awards-strip,
+  .documents-layout,
+  .document-list,
   .about-grid,
   .stack-columns,
   .project-grid,
