@@ -2,6 +2,23 @@
 
 Static personal website prepared for GitHub Pages deployment.
 
+## Current experience
+
+The Featured projects section and projects.html#uavision cover the Mechanical Design Engineer
+role at UAVision (June 2026–present), including electronics integration, Fusion
+360 sheet-metal design, laser cutting and press brake operation, FDM printing,
+and a 23% reduction in total UCDL Z10 jammer assembly weight.
+
+Product images are stored locally so previews and GitHub Pages do not depend on
+third-party image loading. Credits and original URLs are recorded in
+assets/images/UAVISION_SOURCES.md and linked from the relevant website sections.
+The downloadable CV has been updated; the separate portfolio PDF retains its
+existing project material.
+
+The original homepage introduction, profile, tools, contact text, and branding
+are preserved. UAVision appears only as a project card and a detailed project
+section, with an entry in the project index.
+
 ## Repository structure
 
 ```text

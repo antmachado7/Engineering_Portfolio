@@ -42,7 +42,7 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
@@ -55,8 +55,8 @@
           </p>
 
           <div class="hero-actions">
-            <a class="button" href="assets/docs/Antonio_Gomes_CV.pdf" download>Download CV</a>
-            <a class="button button-secondary" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Download Portfolio PDF</a>
+            <a class="button download-button" href="assets/docs/Antonio_Gomes_CV.pdf" download>Download CV<span class="download-meta">PDF · 1 page · 34 KB</span></a>
+            <a class="button download-button button-secondary" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Download Portfolio PDF<span class="download-meta">PDF · 19 pages · 9.0 MB</span></a>
             <a class="button button-link" href="projects.html">View Projects</a>
           </div>
 
@@ -99,7 +99,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">About</p>
-          <h2>Profile built for engineering recruiters and technical interviewers.</h2>
+          <h2>Engineering background.</h2>
           <p>
             Mechanical engineer specialised in structural analysis and composite materials, with experience in finite element
             modelling, bonded joints, and experimental validation. My work includes the numerical modelling of low-velocity
@@ -135,7 +135,7 @@
           <article class="info-card reveal">
             <h3>Education &amp; credentials</h3>
             <ul class="list-clean">
-              <li>MSc in Mechanical Engineering, Aeronautical Structures &amp; Vehicles, FEUP</li>
+              <li>MSc in Mechanical Engineering, Aeronautical Structures &amp; Vehicles, FEUP, 2023–2026</li>
               <li>Master's thesis at Politecnico di Milano</li>
               <li>BSc in Mechanical Engineering, FEUP</li>
               <li>CSWA Certified SolidWorks Associate, Aug 2023</li>
@@ -158,7 +158,38 @@
 
         <div class="project-grid">
           <article class="project-card reveal">
-            <img src="assets/images/CAE_U.png" alt="Finite element impact simulation of a Glass/PPS composite laminate">
+            <div class="product-montage" role="group" aria-label="UAVision products: Veteras, MPAV-S and UCDL Z10">
+              <div class="montage-tile montage-veteras">
+                <img src="assets/images/uavision-veteras.webp" alt="Electric heavy-lift VTOL flying over agricultural fields" width="960" height="640" loading="lazy" decoding="async">
+                <span class="montage-label">Veteras</span>
+              </div>
+              <div class="montage-tile">
+                <img src="assets/images/uavision-mpav-s.webp" alt="Modular unmanned ground vehicle on a forest track" width="960" height="624" loading="lazy" decoding="async">
+                <span class="montage-label">MPAV-S</span>
+              </div>
+              <div class="montage-tile">
+                <img src="assets/images/uavision-ucdl-z10.webp" alt="Anti-UAS jammer mounted on a naval platform" width="960" height="624" loading="lazy" decoding="async">
+                <span class="montage-label">UCDL Z10</span>
+              </div>
+              <a class="montage-credit" href="https://www.uavision.com/" target="_blank" rel="noreferrer">Images &copy; UAVision</a>
+            </div>
+            <div class="project-card-body">
+              <p class="project-meta">UAVision · Mechanical Design Engineer</p>
+              <h3>Mechanical Design Engineer</h3>
+              <p>
+                Electronics integration across Veteras, MPAV-S, and UCDL Z10, combining Fusion 360 design
+                with hands-on laser cutting, press brake fabrication, and FDM printing.
+              </p>
+              <ul class="project-points">
+                <li>23% reduction in total UCDL Z10 jammer assembly weight</li>
+                <li>Machined components redesigned as sheet-metal parts and manufactured in-house</li>
+              </ul>
+              <a href="projects.html#uavision" class="text-link">Explore UAVision experience</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="assets/images/CAE_U.png" alt="Finite element impact simulation of a Glass/PPS composite laminate" loading="lazy" decoding="async" width="1159" height="548">
             <div class="project-card-body">
               <p class="project-meta">Master's thesis · Politecnico di Milano</p>
               <h3>Low-velocity impact modelling of Glass/PPS laminates</h3>
@@ -170,12 +201,12 @@
                 <li>Delamination area predicted within about 15% of C-scan data</li>
                 <li>Bi-phasic shell-solid strategy used to study indentation behaviour</li>
               </ul>
-              <a href="projects.html#masters-thesis" class="text-link">Open project</a>
+              <a href="projects.html#masters-thesis" class="text-link">Explore impact modelling</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <img src="assets/images/WB_Divider.png" alt="Formula Student rear suspension with CFRP wishbones">
+            <img src="assets/images/wishbones-1280.webp" alt="Formula Student rear suspension with CFRP wishbones" srcset="assets/images/wishbones-640.webp 640w, assets/images/wishbones-1280.webp 1280w, assets/images/wishbones-1920.webp 1920w" sizes="(max-width: 980px) 95vw, 580px" loading="lazy" decoding="async" width="1280" height="853">
             <div class="project-card-body">
               <p class="project-meta">Formula Student FEUP · Wishbones &amp; vibrations lead</p>
               <h3>CFRP wishbones with bonded aluminium connectors</h3>
@@ -187,12 +218,12 @@
                 <li>25 suspension load cases assessed in FE simulation</li>
                 <li>Bonded joint validated experimentally up to 80°C</li>
               </ul>
-              <a href="projects.html#formula-wishbones" class="text-link">Open project</a>
+              <a href="projects.html#formula-wishbones" class="text-link">Explore suspension design</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <img src="assets/images/Transmission_CAD.png" alt="Formula Student drivetrain CAD assembly">
+            <img src="assets/images/Transmission_CAD.png" alt="Formula Student drivetrain CAD assembly" loading="lazy" decoding="async" width="1048" height="685">
             <div class="project-card-body">
               <p class="project-meta">Formula Student FEUP · Transmission engineer</p>
               <h3>Drivetrain and transmission development</h3>
@@ -204,12 +235,12 @@
                 <li>4 kg drivetrain reduction versus the previous prototype</li>
                 <li>Tripod housing reduced from 1.407 kg to 0.920 kg</li>
               </ul>
-              <a href="projects.html#formula-transmission" class="text-link">Open project</a>
+              <a href="projects.html#formula-transmission" class="text-link">Explore drivetrain development</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <img src="assets/images/Wireframe_FEM.png" alt="Aircraft wing-box structural model">
+            <img src="assets/images/Wireframe_FEM.png" alt="Aircraft wing-box structural model" loading="lazy" decoding="async" width="1159" height="548">
             <div class="project-card-body">
               <p class="project-meta">FEUP MSc · Aeronautical structures</p>
               <h3>Wing-box structural, fatigue, and damage-tolerance work</h3>
@@ -221,12 +252,12 @@
                 <li>Static certification checks across spars, ribs, and skin panels</li>
                 <li>Fatigue and composite ply assessment under gust-driven loading</li>
               </ul>
-              <a href="projects.html#aero-structures" class="text-link">Open project</a>
+              <a href="projects.html#aero-structures" class="text-link">Explore wing-box analysis</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <img src="assets/images/WEG.png" alt="Thermal validation setup for electric motor housing">
+            <img src="assets/images/WEG.png" alt="Thermal validation setup for electric motor housing" loading="lazy" decoding="async" width="385" height="517">
             <div class="project-card-body">
               <p class="project-meta">WEG Portugal · Internship</p>
               <h3>Thermal modelling of electric motor housings</h3>
@@ -238,7 +269,7 @@
                 <li>Corrected model matched tests within 7.7%</li>
                 <li>Chamfered fins outperformed non-chamfered alternatives</li>
               </ul>
-              <a href="projects.html#weg-internship" class="text-link">Open project</a>
+              <a href="projects.html#weg-internship" class="text-link">Explore thermal validation</a>
             </div>
           </article>
         </div>
@@ -251,7 +282,7 @@
           <p class="eyebrow">Engineering toolkit</p>
           <h2>Methods and software used across the portfolio.</h2>
           <p>
-            The site is structured so a recruiter can scan the overview quickly, while an interviewer can move into project detail and validation logic.
+            I combine simulation, design and experimental testing to assess structural behaviour and turn analysis into practical engineering decisions.
           </p>
         </div>
 
@@ -296,9 +327,9 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Recommendations &amp; certifications</p>
-          <h2>Supporting documents available for recruiter review.</h2>
+          <h2>Recommendations and technical credentials.</h2>
           <p>
-            This section provides one combined packet and separate downloads for recommendation letters and certificates already referenced in the portfolio material.
+            References from research and industry, alongside certifications in CAD and composite design. Download the complete packet or choose an individual document.
           </p>
         </div>
 
@@ -310,30 +341,32 @@
               A single PDF containing recommendation and certification material, useful when sending one consolidated supporting document alongside the CV and portfolio.
             </p>
             <div class="hero-actions">
-              <a class="button" href="assets/docs/Antonio_Gomes_Recommendations_and_Certificates.pdf" download>Download Combined PDF</a>
+              <a class="button download-button" href="assets/docs/Antonio_Gomes_Recommendations_and_Certificates.pdf" download>Download Combined PDF<span class="download-meta">PDF · 6 pages · 2.8 MB</span></a>
             </div>
           </article>
 
           <div class="document-list">
             <a class="document-card reveal" href="assets/docs/letter_of_recommendation.pdf" download>
-              <strong>Letter of Recommendation</strong>
-              <span>Download PDF</span>
+              <strong>Politecnico di Milano · Research recommendation</strong>
+              <small>Antonio Maria Caporale, PhD · May 2026</small>
+              <span>Download PDF · 117 KB</span>
             </a>
             <a class="document-card reveal" href="assets/docs/Recommendation_Letter_AntonioGomes.pdf" download>
-              <strong>Recommendation Letter</strong>
-              <span>Download PDF</span>
+              <strong>WEG Portugal · Internship recommendation</strong>
+              <small>Jorge Fernando de Sousa · July 2023</small>
+              <span>Download PDF · 98 KB</span>
             </a>
             <a class="document-card reveal" href="assets/docs/Recommendation_Letter_Prof_Volnei_Tita_USP_2026.pdf" download>
               <strong>Recommendation Letter, Prof. Volnei Tita</strong>
-              <span>Download PDF</span>
+              <span>Download PDF · 302 KB</span>
             </a>
             <a class="document-card reveal" href="assets/docs/Certificate_C-2JAUPXEG85.pdf" download>
               <strong>CSWA Certificate</strong>
-              <span>Download PDF</span>
+              <span>Download PDF · 424 KB</span>
             </a>
             <a class="document-card reveal" href="assets/docs/CDW-XXVI-Certificate-AntonioGomes.pdf" download>
               <strong>Composites Design Workshop Certificate</strong>
-              <span>Download PDF</span>
+              <span>Download PDF · 151 KB</span>
             </a>
           </div>
         </div>
@@ -353,7 +386,10 @@
             <span>FS Portugal 2024: 1st Overall</span>
             <span>FS Portugal 2024: 1st Design &amp; Cost</span>
             <span>FS Portugal 2025: 1st Business Plan</span>
-            <span>FS Germany 2025: 2nd Engineering Design, 3rd Cost Report</span>
+            <span>FS Portugal 2025: 2nd Engineering Design, 3rd Cost Report</span>
+            <span>FS Germany 2025: 3rd Cost Report, 9th Business Plan</span>
+            <span>FS Netherlands 2025: 1st Business Plan</span>
+            <span>FS UK 2024: 2nd Overall, 1st Cost Report</span>
           </div>
         </div>
       </div>
@@ -363,10 +399,9 @@
       <div class="container contact-grid">
         <div class="contact-copy reveal">
           <p class="eyebrow">Contact</p>
-          <h2>Open to graduate engineering roles in structures, composites, and CAE.</h2>
+          <h2>Let's discuss your engineering challenges.</h2>
           <p>
-            Based in Porto, Portugal. This site is prepared as a static portfolio for public hosting and job applications,
-            with downloadable CV and portfolio documents for direct recruiter review.
+            Based in Porto, Portugal. Contact me to discuss mechanical design, structural analysis, composites and product development opportunities.
           </p>
         </div>
 
@@ -389,8 +424,8 @@
           </div>
 
           <div class="contact-actions">
-            <a class="button" href="assets/docs/Antonio_Gomes_CV.pdf" download>Download CV</a>
-            <a class="button button-secondary" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Download Portfolio PDF</a>
+            <a class="button download-button" href="assets/docs/Antonio_Gomes_CV.pdf" download>Download CV<span class="download-meta">PDF · 1 page · 34 KB</span></a>
+            <a class="button download-button button-secondary" href="assets/docs/Antonio_Gomes_Portfolio.pdf" download>Download Portfolio PDF<span class="download-meta">PDF · 19 pages · 9.0 MB</span></a>
           </div>
         </div>
       </div>
