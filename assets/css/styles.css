@@ -5,7 +5,7 @@
   --surface-strong: #dfe8f3;
   --ink: #142033;
   --ink-soft: #475569;
-  --ink-muted: #6b7a90;
+  --ink-muted: #526278;
   --line: #d6e0ea;
   --line-strong: #b7c7d9;
   --brand: #143459;
@@ -384,6 +384,79 @@ h3 {
   color: var(--ink-muted);
 }
 
+.image-credit {
+  display: block;
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.image-credit a,
+.uavision-products-heading a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.uavision-impact {
+  display: grid;
+  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.3rem;
+  padding: 2rem;
+  background: var(--brand-deep);
+  color: #fff;
+  border-radius: var(--radius-md);
+}
+
+.uavision-impact .project-meta {
+  color: var(--accent-soft);
+}
+
+.uavision-impact p:last-child {
+  margin-bottom: 0;
+}
+
+.impact-number strong {
+  display: block;
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.6rem;
+}
+
+.impact-number span {
+  display: block;
+  max-width: 24ch;
+  color: var(--brand-soft);
+}
+
+.uavision-products-heading {
+  margin-top: 2.5rem;
+  color: var(--ink-soft);
+}
+
+.uavision-gallery .media-card {
+  margin: 0;
+}
+
+.uavision-gallery .media-card img {
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.uavision-gallery .media-card figcaption {
+  padding: 1.2rem;
+}
+
+.uavision-gallery h3 {
+  color: var(--ink);
+}
+
+.uavision-gallery p {
+  margin-bottom: 0;
+}
+
 .chip-grid {
   display: flex;
   flex-wrap: wrap;
@@ -449,9 +522,73 @@ h3 {
 
 .project-card img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   background: linear-gradient(180deg, #f9fbff, #ecf2f8);
+}
+
+.product-montage {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  overflow: hidden;
+  gap: 3px;
+  background: var(--surface);
+}
+
+.montage-tile {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.montage-veteras {
+  grid-column: 1 / -1;
+}
+
+.product-montage img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.montage-veteras img {
+  object-position: 50% 48%;
+}
+
+.montage-label,
+.montage-credit {
+  position: absolute;
+  z-index: 1;
+  border-radius: 0.3rem;
+  background: rgba(13, 36, 64, 0.88);
+  color: #fff;
+}
+
+.montage-label {
+  bottom: 0.6rem;
+  left: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.montage-credit {
+  top: 0.6rem;
+  right: 0.6rem;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.65rem;
+}
+
+.montage-credit:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .project-card-body {
@@ -618,8 +755,7 @@ h3 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(16px);
+  opacity: 1;
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
 
@@ -676,7 +812,19 @@ h3 {
   font-weight: 600;
 }
 
+@media (max-width: 1100px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reveal.is-pending {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
 @media (max-width: 980px) {
+  .uavision-impact,
   .hero-grid,
   .page-hero-grid,
   .contact-grid,
@@ -705,7 +853,7 @@ h3 {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 980px) {
   .site-nav {
     position: absolute;
     top: calc(100% + 0.5rem);
@@ -774,4 +922,44 @@ h3 {
   .page-hero-actions {
     flex-direction: column;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal, .reveal.is-pending {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Audit corrections: preserve the established template and media dimensions. */
+section[id], main[id] { scroll-margin-top: 6rem; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+.contact-card a:focus-visible, .image-link:focus-visible {
+  outline-color: #b78749;
+  outline-offset: -4px;
+}
+.nav-toggle { min-width: 44px; min-height: 44px; cursor: pointer; }
+.nav-toggle span:not(.sr-only) { margin-inline: auto; }
+.download-button { flex-direction: column; gap: 0.1rem; }
+.download-meta { display: block; font-size: 0.72rem; font-weight: 400; letter-spacing: 0; }
+.document-card small { display: block; margin-bottom: 0.7rem; color: var(--ink-soft); }
+.project-card > img, .media-card img { object-fit: contain; }
+.media-card img { height: auto; }
+.uavision-gallery .media-card img { object-fit: cover; }
+.image-link { position: relative; display: block; color: #fff; }
+.image-enlarge {
+  display: block;
+  text-align: right;
+  padding: 0.25rem 0.6rem;
+  background: var(--brand-deep);
+  color: #fff;
+  font-size: 0.75rem;
 }
