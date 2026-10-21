@@ -7,17 +7,21 @@ Static personal website prepared for GitHub Pages deployment.
 The Featured projects section and projects.html#uavision cover the Mechanical Design Engineer
 role at UAVision (June 2026–present), including electronics integration, Fusion
 360 sheet-metal design, laser cutting and press brake operation, FDM printing,
-and a 23% reduction in total UCDL Z10 jammer assembly weight.
+and a 23% reduction in total UCDL Z10 jammer assembly weight. It also covers
+ELANUS launcher CAD, manufacturing, assembly and integration troubleshooting,
+and Ansys static and modal analysis of a helicopter battery and gimbal support
+under six directional load cases per applicable ASTM F3842-26 requirements.
 
 Product images are stored locally so previews and GitHub Pages do not depend on
 third-party image loading. Credits and original URLs are recorded in
 assets/images/UAVISION_SOURCES.md and linked from the relevant website sections.
-The downloadable CV has been updated; the separate portfolio PDF retains its
-existing project material.
+The downloadable CV and 20-page portfolio include the October 2026 updates.
+Previous research, Formula Student and academic project details are retained.
 
-The original homepage introduction, profile, tools, contact text, and branding
-are preserved. UAVision appears only as a project card and a detailed project
-section, with an entry in the project index.
+The homepage profile leads with industry experience while retaining a strong
+focus on composites, FEA, impact mechanics, adhesives and experimental validation.
+The established template and branding are retained. Product-specific UAVision
+experience appears in the Projects section and its detailed project entry.
 
 ## Repository structure
 
