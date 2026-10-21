@@ -548,7 +548,7 @@ h3 {
 }
 
 .montage-veteras {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 .product-montage img {
@@ -560,6 +560,15 @@ h3 {
 
 .montage-veteras img {
   object-position: 50% 48%;
+}
+
+.montage-elanus img {
+  object-fit: contain;
+  background: var(--surface);
+}
+
+.uavision-gallery img[src$="uavision-elanus.webp"] {
+  object-fit: contain;
 }
 
 .montage-label,
