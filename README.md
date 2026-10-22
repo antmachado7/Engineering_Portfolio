@@ -10,7 +10,7 @@ role at UAVision (June 2026–present), including electronics integration, Fusio
 and a 23% reduction in total UCDL Z10 jammer assembly weight. It also covers
 ELANUS launcher CAD, manufacturing, assembly and integration troubleshooting,
 and Ansys static and modal analysis of a helicopter battery and gimbal support
-under six directional load cases per applicable ASTM F3842-26 requirements.
+under six directional load cases per applicable ASTM F3813-26 requirements.
 
 Product images are stored locally so previews and GitHub Pages do not depend on
 third-party image loading. Credits and original URLs are recorded in
