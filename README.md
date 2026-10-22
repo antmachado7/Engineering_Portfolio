@@ -48,6 +48,8 @@ github-pages-site/
 
 - CV PDF: `assets/docs/Antonio_Gomes_CV.pdf`
 - Portfolio PDF: `assets/docs/Antonio_Gomes_Portfolio.pdf`
+- Full master's thesis (349 pages): `assets/docs/Low-Velocity Impact Damage Assessment and Numerical Modelling of Glass-PPS Laminated Composites Using Commercial Finite Element Tools.pdf`, linked from the master's thesis project section. The PDF content is unchanged; the filename uses a hyphen in Glass-PPS because a slash cannot be part of a filename.
+- Thesis presentation (54 slides): `assets/docs/Thesis_Presentation_Final.pdf`, linked alongside the full thesis. The supplied presentation is published in its original PDF format.
 
 If you replace either file, keep the same filenames so the download buttons continue to work without changes.
 
